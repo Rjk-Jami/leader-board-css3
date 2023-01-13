@@ -110,7 +110,7 @@ hr {
     border-radius: 10px;
     box-shadow:0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
     padding:14px 16px 21px 12px ;
-    width: 253 px;
+   
 }
 
 .course .course-banner img {
@@ -170,4 +170,50 @@ font-weight: 500;
 
 .fa-clock {
     color: #FF4A60;
+}
+/* MEDIA QUEARY */
+/* --------------- */
+/* mobile device */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players {
+       
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+
+    }
+    .player{
+        flex-direction: column;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+        padding: 10px;
+    }
+    .blog{
+        flex-direction: column;
+        gap: 0;
+    }
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }  
+    .players, .courses {
+       
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+
+    }
+    .blogs {
+       
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+
+    }
 }
